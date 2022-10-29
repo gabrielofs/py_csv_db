@@ -1,3 +1,5 @@
+## AUTHOR: GABRIEL DE OLIVEIRA FREIRE SILVA
+
 import csv
 import numpy as np
 import os
@@ -21,7 +23,7 @@ def ler_diretorio():
                         dados.append(np.asarray(dado))
                         tam_vetor = len(archive.name.split("/"))
                         nomes_das_tabelas.append(archive.name.split("/")[tam_vetor-1].split(".")[0])
-
+                        
             menu(dados, nomes_das_tabelas, False)
 
     except FileNotFoundError as error:
@@ -35,11 +37,9 @@ def ler_arquivo():
 
     try:
         with open(arquivo, mode='r') as archive:
-            dados = [] 
-            nomes_das_tabelas = []
             ler_csv = csv.reader(archive, delimiter = ",", quotechar = '"')
             data = [data for data in ler_csv]
-            dados.append(np.asarray(data))
+            dados = np.asarray(data)
             nomes_das_tabelas = archive.name.split(".")[0]
 
         menu(dados, nomes_das_tabelas, True)

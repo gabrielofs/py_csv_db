@@ -1,3 +1,5 @@
+## AUTHOR: GABRIEL DE OLIVEIRA FREIRE SILVA
+
 def listarTabelas(tabelas, is_arq):
     
     print("\n -----------\n")

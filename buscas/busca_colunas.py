@@ -1,3 +1,5 @@
+## AUTHOR: GABRIEL DE OLIVEIRA FREIRE SILVA
+
 def buscaColunas(query, pos_from):
     i = 1
     count = 0

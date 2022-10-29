@@ -1,3 +1,5 @@
+## AUTHOR: GABRIEL DE OLIVEIRA FREIRE SILVA
+
 def buscaFrom(query):
     try:
         pos_from = query.split(" ").index("from")

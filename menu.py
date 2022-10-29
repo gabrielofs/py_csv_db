@@ -1,3 +1,5 @@
+## AUTHOR: GABRIEL DE OLIVEIRA FREIRE SILVA
+
 from listar_tabelas import *
 from consulta import *
 
@@ -17,8 +19,8 @@ def menu(dados, tabelas, is_arq):
             listarTabelas(tabelas, is_arq)
         
         elif(opcao == str(2)):
-            
-            realizaConsulta(dados, tabelas)
+
+            realizaConsulta(dados, tabelas, is_arq)
         
         elif(opcao == str(3)):
 

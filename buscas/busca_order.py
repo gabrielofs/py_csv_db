@@ -1,3 +1,5 @@
+## AUTHOR: GABRIEL DE OLIVEIRA FREIRE SILVA
+
 def buscaOrder(query):
     try:
         pos_order = query.split(" ").index("order")
